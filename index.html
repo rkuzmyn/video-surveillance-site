@@ -1,0 +1,693 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<title>Видеонаблюдение!</title>
+
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/lightbox.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.aw-showcase.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(".carusel").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev"
+    });
+    $("#showcase").awShowcase();
+});
+</script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+	$('.close').click(function(){
+	   $('.popup_modal').bPopup().close();
+	});
+});
+
+$(function(){
+	$('#py_1').click(function(){
+        $('#py_1_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#py_2').click(function(){
+        $('#py_2_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#py_2').click(function(){
+        $('#py_2_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#py_3').click(function(){
+        $('#py_3_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#cro_1').click(function(){
+        $('#cro_1_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#cro_2').click(function(){
+        $('#cro_2_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#cro_3').click(function(){
+        $('#cro_3_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#skat_1').click(function(){
+        $('#skat_1_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#skat_2').click(function(){
+        $('#skat_2_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#skat_3').click(function(){
+        $('#skat_3_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#snake_1').click(function(){
+        $('#snake_1_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#snake_2').click(function(){
+        $('#snake_2_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('#snake_3').click(function(){
+        $('#snake_3_modal').bPopup({
+	    easing: 'easeOutBack', //uses jQuery easing plugin
+            speed: 650,
+            transition: 'slideDown'
+        });
+     });
+     $('.show_modal').click(function(){
+        $('#form_modals').bPopup({
+            speed: 650,
+            transition: 'slideIn'
+        });
+     });
+     $('.go_see_more').click(function(){
+        $('#form_modals_see_more').bPopup({
+            speed: 650,
+            transition: 'slideIn'
+        });
+     });
+});
+</script>
+
+
+<script type="text/javascript" src="js/myscripts.js"></script>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="send_results"><!--Для вывода отчёта об отправке--></div>
+    <div id="header_wrapper">
+        <div id="he_back_1"></div>
+        <div id="he_back_2"></div>
+        <div id="header">
+            <div id="he_back_3">
+                <div id="star"></div>
+            </div>
+            <div id="info">
+                <h4>БЕСПЛАТНЫЙ ЗВОНОК ПО РФ</h4>
+                <h3>8-800 - 000 - 00 - 00</h3>
+                <a href="#top_call" id="top_call_p" class="script_help show_modal ex_hover"></a>
+            </div>
+            <h1>готовые решения систем видеонаблюдения<br /> для дома, дачи и бизнеса!<br /><span style="color: red; text-shadow: 0px 1.3px 1px black;">Доставка по РФ бесплатно</span></h1>
+            <div id="main_form_wrapper">
+                <h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
+                <p>и наш специалист свяжется с Вами</p>
+                <form action="sendMessage.php" method="post" id="main_form" >
+                    <input name="name" type="text" placeholder="ИМЯ" id="main_name" />
+                    <input name="phone" type="text" placeholder="ТЕЛЕФОН" id="main_telephone" />
+                    <input name="email" type="text" placeholder="E-MAIL" id="main_email" />
+                    <input type="submit" value="ОТПРАВИТЬ" class="ex_hover" />
+                </form>
+            </div>
+            <h2>Продано более <span>100</span> экземпляров!</h2>
+            <h4>100% гарантия качества!<br />простота пользования <br /> непреодолимые возможности!<br />Увидь то что скрыто от твоих глаз!</h4>
+        </div>
+    </div>
+    
+    <div id="action_wrapper">
+     
+        
+        <div id="bonus">
+            <h1>БОНУСЫ ДЛЯ НАШИХ ПОКУПАТЕЛЕЙ!</h1>
+            <div id="bo_count">
+                <h2>Успейте получить бонусы от покупки</h2>
+                <div id="countdown_2">
+                    
+                </div>
+                <a href="#bonus_h" id="bonus_modal" class="script_help show_modal ex_hover">Получить бонус</a>
+            </div>
+            <div id="bo_info">
+                <p>МЫ ДАРИМ ДЕНЬГИ! Пригласите друга, сделавшего заказ от 40 000<br />руб. и получите 10% от суммы заказа! 
+                Вам деньги, другу ПОДАРОК!!!</p>
+                <p>Покупая товар в нашем магазине, Вы можете заказать именной<br />сертификат 
+                на покупку или бонусный купон на повторную покупку!</p>
+                <p>Скидка 10% для Вас при повторной покупке в течение месяца<br />после покупки!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="goods_wrapper">
+        <div id="goods">
+            <h1>Список самой популярной продукции</h1>
+            <h2>Под заказ более 300 экземпляров</h2>
+            <h3>UControl</h3>
+            <div class="good">
+                <h4>Комплект видеонаблюдения UControl Старт 5S</h4>
+                <a href="images/goods/originals/1.jpg" rel="lightbox[python]" class="go_img"><img src="images/goods/1.jpg" alt=""/></a>
+                <div class="go_price">15 990 руб.</div>
+                <a href="#ptc_106" class="go_buy script_help show_modal ex_hover">купить</a>
+                <a href="#ptc_106" class="go_more script_help ex_hover" id="py_1">Подробнее</a>
+            </div>
+            <div class="good">
+                <h4>Комплект видеонаблюдения UControl Эконом 5S</h4>
+                <a href="images/goods/originals/2.jpg" rel="lightbox[python]" class="go_img"><img src="images/goods/2.jpg" alt=""/></a>
+                <div class="go_price">19 990 руб.</div>
+                <a href="#pt_828" class="go_buy script_help show_modal ex_hover">купить</a>
+                <a href="#pt_828" class="go_more script_help ex_hover" id="py_2">Подробнее</a>
+            </div>
+            <div class="good last">
+                <h4>Комплект видеонаблюдения UControl Квартира</h4>
+                <a href="images/goods/originals/3.jpg" rel="lightbox[python]" class="go_img"><img src="images/goods/3.jpg" alt=""/></a>
+                <div class="go_price">20 290 руб.</div>
+                <a href="#pt_122" class="go_buy script_help show_modal ex_hover">купить</a>
+                <a href="#pt_122" class="go_more script_help ex_hover" id="py_3">Подробнее</a>
+            </div>
+             
+            <div class="good">
+                <h4>Комплект видеонаблюдения UControl Стандарт 5S</h4>
+                <a href="images/goods/originals/4.jpg" rel="lightbox[crocodile]" class="go_img"><img src="images/goods/4.jpg" alt=""/></a>
+                <div class="go_price">24 990 руб.</div>
+                <a href="#fcm_159" class="go_buy script_help show_modal ex_hover">купить</a>
+                <a href="#fcm_159" class="go_more script_help ex_hover" id="cro_1">Подробнее</a>
+            </div>
+            <div class="good">
+                <h4>Комплект видеонаблюдения UControl Офис</h4>
+                <a href="images/goods/originals/5.jpg" rel="lightbox[crocodile]" class="go_img"><img src="images/goods/5.jpg" alt=""/></a>
+                <div class="go_price">26 390 руб.</div>
+                <a href="#bcm_747" class="go_buy script_help show_modal ex_hover">купить</a>
+                <a href="#bcm_747" class="go_more script_help ex_hover" id="cro_2">Подробнее</a>
+            </div>
+            <div class="good last">
+                <h4>Комплект видеонаблюдения UControl Профи 5S</h4>
+                <a href="images/goods/originals/6.jpg" rel="lightbox[crocodile]" class="go_img"><img src="images/goods/6.jpg" alt=""/></a>
+                <div class="go_price">29 990 руб.</div>
+                <a href="#bcm_189" class="go_buy script_help show_modal ex_hover">купить</a>
+                <a href="#bcm_189" class="go_more script_help ex_hover" id="cro_3">Подробнее</a>
+            </div>
+           
+        </div>
+    </div>
+        
+    <div id="goods_form_wrapper">
+        <div id="go_form">
+            <h1>Сделать запрос на заказ по Акции</h1>
+            <form action="sendMessage.php" method="post" id="main_form_2">
+                <input name="name" type="text" placeholder="ИМЯ" id="main_name_2" />
+                <input name="phone" type="text" placeholder="НОМЕР ТЕЛЕФОНА" id="main_telephone_2" />
+                <input name="email" type="text" placeholder="КОНТАКТНЫЙ E-MAIL" id="main_email_2" />
+                <input type="submit" value="ОТПРАВИТЬ" class="ex_hover" />
+            </form>
+        </div>
+        <h3 class="form_h3">Оставили заявку более 950 раз</h3>
+    </div>
+    
+    <div id="goods_2_wrapper">
+        <div id="goods_2">
+            
+            <div class="good">
+                <h4>Комплект видеонаблюдения UControl Бизнес 5S Мини</h4>
+                <a href="images/goods/originals/8.jpg" rel="lightbox[skat]" class="go_img"><img src="images/goods/7.jpg" alt=""/></a>
+                <div class="go_price">35 990 руб.</div>
+                <a href="#st_111" class="go_buy script_help show_modal ex_hover">купить</a>
+                <a href="#st_111" class="go_more script_help ex_hover" id="skat_2">Подробнее</a>
+            </div>
+            <div class="good">
+                <h4>Комплект видеонаблюдения UControl Бизнес 5S</h4>
+                <a href="images/goods/originals/7.jpg" rel="lightbox[skat]" class="go_img"><img src="images/goods/8.jpg" alt=""/></a>
+                <div class="go_price">54 990 руб.</div>
+                <a href="#a_122" class="go_buy script_help show_modal ex_hover">купить</a>
+                <a href="#a_122" class="go_more script_help ex_hover" id="skat_1">Подробнее</a>
+            </div>
+            <div class="good last">
+                <h4>Комплект видеонаблюдения UControl Премиум 5S</h4>
+                <a href="images/goods/originals/9.jpg" rel="lightbox[skat]" class="go_img"><img src="images/goods/9.jpg" alt=""/></a>
+                <div class="go_price">105 950 руб.</div>
+                <a href="#a_620" class="go_buy script_help show_modal ex_hover">купить</a>
+                <a href="#a_620" class="go_more script_help ex_hover" id="skat_3">Подробнее</a>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    
+    <div id="five_problems">
+        <h1>5 ОСНОВНЫХ ПРОБЛЕМ С КОТОРЫМИ СТАЛКИВАЮТСЯ 95 % КЛИЕНТОВ</h1>
+        <ul>
+        	<li style="background: url('images/5_problems/1.png') no-repeat left;"><span>Кидают.</span> Делают неадекватно низкое по цене предложение. Берут предоплату 100%. И исчезают. Ни ОБЭП, ничего уже не поможет.<br />К сожалению, пока на рынке - это общее место.</li>
+        	<li style="background: url('images/5_problems/2.png') no-repeat left; line-height: 43px;"><span>Задержка поставки.</span> Товар может прийти через несколько месяцев и в итоге становится не нужным.</li>
+        	<li style="background: url('images/5_problems/3.png') no-repeat left;"><span>Продают брак.</span> Под видом нового продукта продают старый. Поставщик за это не несет ответственности. А вы снова теряете деньги и свое время.</li>
+        	<li style="background: url('images/5_problems/4.png') no-repeat left;"><span>Цена неадекватная.</span> 80% предложений на рынке - посредники. И посредники посредников. Делают наценку 200 - 300%. В итоге вы<br />покупаете через 10 фирм. И переплачиваете во много раз.</li>
+        	<li style="background: url('images/5_problems/5.png') no-repeat left;"><span>Никаких гарантий.</span> Когда вам продают через цепочку, вы покупаете без гарантий производителя. И концы в воду. Непонятно к кому<br />обращаться. Завтра магазин, у которого вы купили, просто пропадет.</li>
+        </ul>
+    </div>
+    
+    <div id="why">
+        <h1>ПОЧЕМУ КЛИЕНТЫ ВЫБИРАЮТ НАС</h1>
+        <div class="why_left">
+            <p><span>100% гарантия качества.</span> Мы работаем непосредственно с производителями, где товар<br /> 
+            проходит тщательную проверку, благодаря чему Вы можете быть уверены в качестве товара и<br /> обслуживания.</p>
+        </div>
+        <div class="why_right">
+            <p><span>Продукция от производителя.</span> Непосредственная связь с производителями позволит 
+            Вам<br /> приобретать товары по себестоимости, обходя посреднические наценки в 200-300%.</p>
+        </div>
+        <div class="why_left" style="background: url('images/why/3.png') no-repeat left;">
+            <p><span>Бесплатная доставка по всей России.</span> Мы доставляем товар бесплатно с помощью<br /> 
+            транспортной компании или почтой России по выбору заказчика.</p>
+        </div>
+        <div class="why_right" style="background: url('images/why/4.png') no-repeat right;">
+            <p><span>Работа без предоплаты.</span> Оплата товара происходит наложенным платежом при получении<br /> заказа, 
+            благодаря чему Вы можете быть уверены в нашей добропорядочности.</p>
+        </div>
+        <div class="why_left" style="background: url('images/why/5.png') no-repeat left;">
+            <p><span>Гарантия возврата.</span> В случае, если товар не соответствует заявленным качествам, 
+            Вы можете<br /> обменять его в течение 7-х дней или вернуть обратно."</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div id="our_sertificats">
+        <h1>Наши сертификаты качества</h1>
+        
+        <button class="prev"></button>
+        <button class="next"></button>
+                
+        <div class="carusel">
+            <ul>
+                <li><a href="images/sertificats/originals/1.jpg" rel="lightbox"><img src="images/sertificats/1pr.jpg" alt="" width="284" height="370" ></a></li>
+                <li><a href="images/sertificats/originals/4.jpg" rel="lightbox"><img src="images/sertificats/4pr.jpg" alt="" width="284" height="370" ></a></li>
+                <li><a href="images/sertificats/originals/3.jpg" rel="lightbox"><img src="images/sertificats/3pr.jpg" alt="" width="284" height="370" ></a></li>
+                <li><a href="images/sertificats/originals/2.jpg" rel="lightbox"><img src="images/sertificats/2pr.jpg" alt="" width="284" height="370" ></a></li>
+            </ul>
+        </div>        
+    </div>
+    
+    <div id="reviews">
+        <h1>Отзывы</h1>
+        <div class="review_left">
+            <h3>Людмила,  27 лет, г. Москва</h3>
+            <p>Ваш подарочный сертификат супер идея, оригинально получилось и подруга довольна. 
+            Она давно хотела установить видеонаблюдение. Да и подарок на годовщину удался.</p>
+        </div>
+        
+        <div class="review_right">
+            <h3>Николай,  32 года, г. Самара</h3>
+            <p>Ребята, спасибо за систему! Взял по акции - качество отличное. 
+            Другу на день рождения такуюже пообещал, жду акции в июне.</p>
+        </div>
+        
+        <div class="review_left" style="background: url(images/reviews/3.png) no-repeat left;">
+            <h3>Катерина, г. Белгород</h3>
+            <p>Мне тоже пришлось пере заказать, маме подарок хотела сделать. Она всё время думала что у неё ктото возле дома ходит, установили видеонаблюдение, теперь и мне спокойнее и ей.</p>
+        </div>
+        
+        <div class="review_right" style="background: url(images/reviews/4.png) no-repeat right;">
+            <h3>Иришка, 34 года, Волгоградская область</h3>
+            <p> Купила себе домой видеонаблюдение, всё пришло очень быстро, а самое главное менеджеры такие приятные оказались, обьянили как всё установить.</p>
+        </div>
+        
+        <div class="review_left" style="background: url(images/reviews/5.png) no-repeat 26px 0;">
+            <h3>Валентина Павловна, г. Череповецк</h3>
+            <p>Мы сильно с дочерью волновались, что доставка подведет, но нет. Точно в срок и даже бесплатно.</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+   
+    
+    <div id="goods_form_wrapper_2">
+        <div id="go_form_2">
+            <h1>Сделать запрос на заказ по Акции</h1>
+            <form action="sendMessage.php" method="post" id="main_form_3">
+                <input name="name" type="text" placeholder="ИМЯ" id="main_name_3" />
+                <input name="phone" type="text" placeholder="НОМЕР ТЕЛЕФОНА" id="main_telephone_3" />
+                <input name="email" type="text" placeholder="КОНТАКТНЫЙ E-MAIL" id="main_email_3" />
+                <input type="submit" value="ОТПРАВИТЬ" class="ex_hover" />
+            </form>
+        </div>
+        <h3 class="form_h3">Оставили заявку более 950 раз</h3>
+    </div>
+    
+    <div id="footer_wrapper">
+        <div id="fo_back_1"></div>
+        <div id="fo_back_2"></div>
+        <div id="footer">
+          
+            <div id="fo_back_3"></div>
+            <h2>г. Москва,  <br />ул. Ленина, дом 110, корпус 2,</h2>
+            <h3 id="fo_em">mail@mail.ru</h3>
+            <div id="fo_info">
+                <h4>БЕСПЛАТНЫЙ ЗВОНОК ПО РФ</h4>
+                <h5>8-800 - 000 - 00 - 00</h5>
+                <h3 class="last">mail@mail.ru</h3>
+                <a href="#bottom_call" class="script_help show_modal" id="bo_call">Ссылка</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Модальные окна "подробнее" -->
+
+    <!-- ПИТОН -->
+<div class="popup_modal more_modal" id="py_1_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/1/main.jpg" alt="" />
+            <h4>15 990 руб.</h4>
+        <h1>UControl Старт 5S</h1>
+        </div>
+        <ul>
+        	<li>Система мобильного видеонаблюдения серии "Установи сам!"</li>
+        	<li>4 цветные всепогодные видеокамеры с углом обзора 53°, ночным видением до 12 м и средним разрешением</li>
+        	<li>4-х канальный рекордер видеонаблюдения</li>
+        	<li>Просмотр с iPhone, iPad, смартфонов и плашетов Android</li>
+        	<li>Просмотр и управление системой</li>
+			<li>Функция циклической записи</li>
+			<li>Подключение к телевизору или монитору</li>
+        </ul>
+        
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+<div class="popup_modal more_modal" id="py_2_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/2/main.jpg" alt="" />
+            <h4>19 990 руб.</h4>
+        </div>
+        <h1>UControl Эконом 5S</h1>
+        <ul>
+        	<li>Система мобильного видеонаблюдения серии "Установи сам!"</li>
+        	<li>4 цветные всепогодные видеокамеры с углом обзора 53°, ночным видением до 12 м и разрешением выше среднего</li>
+        	<li>4-х канальный рекордер видеонаблюдения</li>
+        	<li>4 шнура с готовыми разъемами по 18 м (удлинение до 180 м)</li>
+            <li>Запись по детектору движения, по расписанию</li>
+            <li>2 аудиовхода для микрофонов</li>
+            <li>Подключение к телевизору или монитору</li>
+        	<li>Просмотр с iPhone, iPad, смартфонов и коммуникаторов </li>
+        </ul>
+       
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+<div class="popup_modal more_modal" id="py_3_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/3/main.jpg" alt="" />
+            <h4>20 290 руб.</h4>
+        </div>
+        <h1>UControl Квартира</h1>
+        <ul>
+        	<li>Система мобильного видеонаблюдения серии "Установи сам!"</li>
+        	<li>2 цветные миниатюрные видеокамеры с углом обзора 65° и высоким разрешением</li>
+        	<li>4-х канальный рекордер видеонаблюдения</li>
+        	<li>2 шнура с готовыми разъемами по 30 м (удлинение до 240 м)</li>
+        	<li>Запись по детектору движения, постоянная, по расписанию</li>
+        	<li>Жесткий диск 500 ГБ (от 6-ти недель непрерывной записи)</li>
+        	<li>Функция циклической записи</li>
+        	<li>Просмотр с iPhone, iPad, смартфонов и коммуникаторов</li>
+        	<li>Отправка фото по E-mail</li>
+        </ul>
+       
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+
+    <!-- КРОКОДИЛ -->
+<div class="popup_modal more_modal" id="cro_1_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/4/main.jpg" alt="" />
+            <h4>24 990 руб.</h4>
+        </div>
+        <h1>UControl Стандарт 5S</h1>
+        <ul>
+        	<li>Система мобильного видеонаблюдения серии "Установи сам!"</li>
+        	<li>4 цветные всепогодные видеокамеры с углом обзора 65°, ночным видением до 15 м и разрешением выше среднего</li>
+        	<li>4-х канальный рекордер видеонаблюдения</li>
+        	<li>4 шнура с готовыми разъемами по 30 м (удлинение до 240 м)</li>
+        	<li>Запись по детектору движения, по расписанию</li>
+        	<li>Цифровой ZOOM при просмотре видео в реальном времени или архива записей</li>
+        	<li>Просмотр и управление системой видеонаблюдения с компьютера через Интернет и по локальной сети (Windows и MacOS)</li>
+        	
+        	
+        </ul>
+       
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+<div class="popup_modal more_modal" id="cro_2_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/5/main.jpg" alt="" />
+            <h4>26 390 руб.</h4>
+        </div>
+        <h1>UControl Офис</h1>
+        <ul>
+        	<li>Система мобильного видеонаблюдения серии "Установи сам!"</li>
+        	<li>4 цветные купольные видеокамеры с углом обзора 70° и высоким разрешением</li>
+        	<li>4-х канальный рекордер видеонаблюдения</li>
+        	<li>4 шнура с готовыми разъемами по 30 м (удлинение до 240 м)</li>
+        	<li>Запись по детектору движения, по расписанию, по тревоге</li>
+        	<li>Жесткий диск 500 ГБ (от 3-х недель непрерывной записи)</li>
+        	<li>Просмотр с iPhone, iPad, смартфонов и коммуникаторов</li>
+            <li>Функция двусторонней аудиосвязи</li>
+            <li>Подключение к монитору или телевизору</li>
+            <li>4 аудиовхода для микрофонов</li>
+        </ul>
+       
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+<div class="popup_modal more_modal" id="cro_3_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/6/main.jpg" alt="" />
+            <h4>29 990 руб.</h4>
+        </div>
+        <h1>UControl Профи 5S</h1>
+        <ul>
+        	<li>Система мобильного видеонаблюдения серии "Установи сам!"</li>
+        	<li>4 цветные всепогодные видеокамеры с углом обзора 60°, ночным видением до 30 м и высоким разрешением</li>
+        	<li>4-х канальный рекордер видеонаблюдения</li>
+        	<li>4 шнура с готовыми разъемами по 30 м (удлинение до 240 м)</li>
+        	<li>Запись по детектору движения, по расписанию, по тревоге</li>
+        	<li>Жесткий диск 500 ГБ (от 3-х недель непрерывной записи)</li>
+        	<li>Функция циклической записи</li>
+        	<li>Антивандальный дизайн камер</li>
+        	<li>Антибликовое покрытие объектива</li>
+        	<li>Просмотр с iPhone, iPad, смартфонов и коммуникаторов</li>
+        	<li>Функция двусторонней аудиосвязи</li>
+        </ul>
+       
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+
+    <!-- СКАТ -->
+<div class="popup_modal more_modal" id="skat_1_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/7/main.jpg" alt="" />
+            <h4>35 990 руб.</h4>
+        </div>
+        <h1>UControl Бизнес 5S Мини</h1>
+        <ul>
+        	<li>Система мобильного видеонаблюдения серии "Установи сам!"</li>
+        	<li>4 цветных всепогодных видеокамеры с углом обзора 65°, ночным видением до 15 м и разрешением выше среднего</li>
+        	<li>8-ми канальный рекордер видеонаблюдения</li>
+        	<li>4 шнура с готовыми разъемами по 30 м (удлинение до 240 м)</li>
+        	<li>Запись по детектору движения, по расписанию, по тревоге</li>
+        	<li>Жесткий диск 1000 ГБ (от 6-ти недель непрерывной записи)</li>
+        	<li>Функция циклической записи</li>
+        	
+        	<li>Просмотр с iPhone, iPad, смартфонов и коммуникаторов</li>
+        </ul>
+       
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+<div class="popup_modal more_modal" id="skat_2_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/8/main.jpg" alt="" />
+            <h4>54 990 руб.</h4>
+        </div>
+        <h1>UControl Бизнес 5S</h1>
+        <ul>
+        	<li>Система мобильного видеонаблюдения серии "Установи сам!"</li>
+        	<li>8 цветных всепогодных видеокамер с углом обзора 60°, ночным видением до 30 м и высоким разрешением</li>
+        	<li>8-ми канальный рекордер видеонаблюдения</li>
+        	<li>8 шнуров с готовыми разъемами по 30 м (удлинение до 240 м)</li>
+        	<li>Запись по детектору движения, по расписанию, по тревоге</li>
+        	<li>Жесткий диск 1000 ГБ (от 3-х недель непрерывной записи)</li>
+        	<li>Функция циклической записи</li>
+            <li>Антивандальный дизайн камер</li>
+        </ul>
+        
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+<div class="popup_modal more_modal" id="skat_3_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/9/main.jpg" alt="" />
+            <h4>105 950 руб.</h4>
+        </div>
+        <h1>UControl Премиум 5S</h1>
+        <ul>
+        	<li>Система мобильного видеонаблюдения серии "Установи сам!"</li>
+        	<li>16 цветных всепогодных видеокамер с углом обзора 60°, ночным видением до 30 м и высоким разрешением</li>
+        	<li>16-канальный рекордер видеонаблюдения</li>
+        	<li>16 шнуров с готовыми разъемами по 30 м (удлинение до 240 м)</li>
+        	<li>Запись по детектору движения, по расписанию, по тревоге</li>
+        	<li>Жесткий диск 2000 ГБ (от 3-х недель непрерывной записи)</li>
+        	<li>Функция циклической записи</li>
+        	<li>Антивандальный дизайн камер</li>
+            <li>Антибликовое покрытие объектива</li>
+        </ul>
+        
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+
+    <!-- МОРСКАЯ ЗМЕЯ -->
+<div class="popup_modal more_modal" id="snake_1_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/10/main.jpg" alt="" />
+            <h4>11 100 руб.</h4>
+        </div>
+        <h1>Сумка из кожи морской змеи<br />BSN 740 Огненно-красная</h1>
+        <ul>
+        	<li>33 x 26 см</li>
+        	<li>Высота ручки 20 см</li>
+        	<li>2 больших отделения + 1 на молнии</li>
+        	<li>2 кармана  + 1 - на молнии</li>
+        	<li>Отделение для телефона</li>
+        	<li>Сумка закрывается молнией</li>
+        	<li>Снаружи - натуральная кожа ската</li>
+        	<li>Внутри - натуральная кожа коровы</li>
+        	<li>Производство Таиланд</li>
+        </ul>
+        <div class="more_img_container">
+            <a href="images/goods/originals/10/1.jpg" rel="lightbox[skake_1]"><img src="images/goods/originals/10/1pr.jpg" class="more_img" alt="" /></a>
+            <a href="images/goods/originals/10/2.jpg" rel="lightbox[skake_1]"><img src="images/goods/originals/10/2pr.jpg" class="more_img" alt="" /></a>
+            <a href="images/goods/originals/10/3.jpg" rel="lightbox[skake_1]"><img src="images/goods/originals/10/3pr.jpg" class="more_img last" alt="" /></a>
+        </div>
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+<div class="popup_modal more_modal" id="snake_2_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/11/main.jpg" alt="" />
+            <h4>11 100 руб.</h4>
+        </div>
+        <h1>Сумка из кожи морской змеи BSN 818<br />Бежевая</h1>
+        <ul>
+        	<li>34 x 20 x 12,5 см</li>
+        	<li>Высота ручки 16 см</li>
+        	<li>1 большое отделение</li>
+        	<li>2 кармана (1 - на молнии)</li>
+        	<li>Отделение для телефона</li>
+        	<li>Сумка закрывается молнией</li>
+        	<li>Снаружи - натуральная кожа морской змеи</li>
+            <li>Производство Таиланд</li>
+        </ul>
+        <div class="more_img_container">
+            <a href="images/goods/originals/11/1.jpg" rel="lightbox[skake_2]"><img src="images/goods/originals/11/1pr.jpg" class="more_img" alt="" /></a>
+            <a href="images/goods/originals/11/2.jpg" rel="lightbox[skake_2]"><img src="images/goods/originals/11/2pr.jpg" class="more_img" alt="" /></a>
+            <a href="images/goods/originals/11/3.jpg" rel="lightbox[skake_2]"><img src="images/goods/originals/11/3pr.jpg" class="more_img last" alt="" /></a>
+        </div>
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+<div class="popup_modal more_modal" id="snake_3_modal">
+        <div class="modal_head">
+            <img src="images/goods/originals/12/main.jpg" alt="" />
+            <h4>11 100 руб.</h4>
+        </div>
+        <h1>Сумка из кожи морской змеи BSN 818<br />Коричневая</h1>
+        <ul>
+        	<li>34 x 20 x 12,5 см</li>
+        	<li>Высота ручки 16 см</li>
+        	<li>1 большое отделение</li>
+        	<li>2 кармана (1 - на молнии)</li>
+        	<li>Отделение для телефона</li>
+        	<li>Сумка закрывается молнией</li>
+        	<li>Снаружи - натуральная кожа морской змеи</li>
+            <li>Производство Таиланд</li>
+        </ul>
+        <div class="more_img_container">
+            <a href="images/goods/originals/12/1.jpg" rel="lightbox[skake_3]"><img src="images/goods/originals/12/1pr.jpg" class="more_img" alt="" /></a>
+            <a href="images/goods/originals/12/2.jpg" rel="lightbox[skake_3]"><img src="images/goods/originals/12/2pr.jpg" class="more_img" alt="" /></a>
+            <a href="images/goods/originals/12/3.jpg" rel="lightbox[skake_3]"><img src="images/goods/originals/12/3pr.jpg" class="more_img last" alt="" /></a>
+        </div>
+        <a href="#12" class="go_buy show_modal modal_ex">купить</a>
+</div>
+
+<!-- Модальные форм -->
+<div class="popup_modal" id="form_modals">
+    <h1 id="script_help" style="display: none;"></h1>
+    <h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
+    <p>и наш специалист свяжется с Вами</p>
+    <form action="sendMessage.php" method="post" id="hidden_form">
+        <input name="name" type="text" placeholder="ИМЯ" id="hidden_name" />
+        <input name="phone" type="text" placeholder="ТЕЛЕФОН" id="hidden_telephone" />
+        <input name="email" type="text" placeholder="E-MAIL" id="hidden_email" />
+        <input type="submit" value="ОТПРАВИТЬ" class="ex_hover" />
+    </form>
+</div>
+
+<div class="popup_modal" id="form_modals_see_more">
+    <h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
+    <p>на прайс-лист</p>
+    <form action="sendMessage.php" method="post" id="hidden_form_2">
+        <input name="name" type="text" placeholder="ИМЯ" id="hidden_name_2" />
+        <input name="email" type="text" placeholder="E-MAIL" id="hidden_email_2" />
+        <input type="submit" value="ОТПРАВИТЬ" class="ex_hover" />
+    </form>
+</div>
+
+</div>
+</body>
+</html>
